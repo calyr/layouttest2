@@ -10,16 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var middleView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        flagUkraine()
+    }
+    
+    func flagUkraine(){
+    
+        /*topView.backgroundColor = UIColor(red:0, green: 0, blue: 1, alpha: 1)
+        middleView.backgroundColor = UIColor(red:0, green: 1, blue: 1, alpha: 1)
+        */
+        middleView.removeFromSuperview()
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
 
 }
 
